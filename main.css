@@ -1,0 +1,225 @@
+:root {
+    --pink: #F7418F;
+    --bg: #F0DBAF;
+    --shadow: 0 2px 2px rgb(0 0 0/0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 2rem;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.mynavbar .nav-link:hover {
+    color:  var(--pink);
+
+}
+
+
+.home {
+    min-height: 50vh;
+    margin-top: -5rem;
+    padding-top: 10rem ;
+    padding-bottom: 5rem;
+}
+
+.home h2, .info h2, .story h2 ,.galeri h2, .rsvp h2, .gift h2{
+    color: var(--pink);
+    font-family: "Great Vibes", cursive;
+    font-size: 5rem;
+}
+
+.home h3 {
+    color: #DBA979;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home a{
+    color: #135D66;
+    background-color: #E3FEF7;
+}
+
+.home p {
+    color: white;
+}
+
+.home label {
+    color: white;
+}
+
+.comentar {
+    min-height: 50vh;
+    margin-top: -5rem;
+    padding-top: 5rem ;
+    padding-bottom: 5rem;
+}
+
+.comentar h2 {
+    color: var(--pink);
+    font-family: "Great Vibes", cursive;
+    font-size: 3rem;
+}
+
+
+.galeri {
+    background-color: #E3FEF7;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+
+.galeri p {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+
+.xml-footer {
+    padding-top: -20rem;
+    margin-top: -15rem;
+}
+
+.ucapan {
+    padding-top: 4rem;
+}
+
+.ucapan h2 {
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+}
+
+.ucapan h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 4rem;
+}
+
+.ucapan span {
+    display: block;
+    text-transform: uppercase;
+    color:#666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    padding: 3rem;
+    background-color: #135D66;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    
+}
+
+footer li a {
+    margin: 0.5rem;
+
+}
+
+.musik-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 50%;
+    mix-blend-mode: difference;
+    animation: mutar 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+#song {
+    display: none;
+}
+
+
+@keyframes mutar {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+
+
+
+/* respondsive design  */
+
+/* ekstra large */
+@media (max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+    
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center
+    }
+    
+}
+/* mobile phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    } 
+   
+}
+
